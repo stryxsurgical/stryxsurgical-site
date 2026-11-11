@@ -1,0 +1,37 @@
+STRYX SITE: MOVING OFF SQUARESPACE (cancel Core by Dec 26, 2026)
+=================================================================
+
+1. GITHUB ACCOUNT (5 min)
+   github.com > Sign up. Use uzair@stryxsurgical.com.
+
+2. WEB3FORMS KEY (2 min)
+   web3forms.com > enter orders@stryxsurgical.com > they email you an access key.
+   Send me the key, or open request-a-quote/index.html in a text editor and replace
+   WEB3FORMS_ACCESS_KEY with it.
+
+3. UPLOAD THE SITE (10 min)
+   GitHub > New repository > name it: stryxsurgical-site > Public > Create.
+   Click "uploading an existing file" > drag in EVERYTHING inside this folder
+   (index.html, the folders, CNAME, robots.txt, sitemap.xml, 404.html) > Commit.
+   Settings > Pages > Source: "Deploy from a branch" > Branch: main, / (root) > Save.
+   Custom domain should already show www.stryxsurgical.com (from the CNAME file).
+   Your site is now at https://YOURNAME.github.io/stryxsurgical-site/ for testing.
+
+4. POINT THE DOMAIN (5 min, in Squarespace > Domains > stryxsurgical.com > DNS)
+   DO NOT TOUCH any MX or TXT records. Those are your Google email.
+   Remove Squarespace's default website records (the A records and the www CNAME
+   pointing to ext-sq.squarespace.com / Squarespace IPs). Then add:
+     A      @     185.199.108.153
+     A      @     185.199.109.153
+     A      @     185.199.110.153
+     A      @     185.199.111.153
+     CNAME  www   YOURNAME.github.io
+   Wait 1-24 hours. Then GitHub > Settings > Pages > tick "Enforce HTTPS".
+
+5. TEST
+   Open stryxsurgical.com and www.stryxsurgical.com. Send yourself a test quote.
+   Send an email to orders@stryxsurgical.com from your phone to confirm email still works.
+
+6. CANCEL SQUARESPACE CORE (before Dec 27)
+   Squarespace > Settings > Billing > Website plan > Cancel.
+   KEEP THE DOMAIN. Make sure the domain stays on auto-renew.
