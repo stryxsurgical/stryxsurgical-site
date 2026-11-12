@@ -42,6 +42,9 @@ font-family:var(--sans);color:var(--ink);background:var(--paper);font-size:16px;
 .sx .specstrip b{font-family:var(--mono);font-weight:500;font-size:1.15rem;font-variant-numeric:tabular-nums}
 .sx .specstrip span{font-size:.85rem;color:var(--steel)}
 .sx .tray{width:100%;max-width:100%;height:auto;display:block}
+.sx .photo{margin:0;display:flex;flex-direction:column;gap:10px}
+.sx .photo img{width:100%;max-width:100%;height:auto;display:block}
+.sx .photo figcaption{font-family:var(--mono);font-size:.8rem;color:var(--steel)}
 /* grids */
 .sx .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
 .sx .g2{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
@@ -131,7 +134,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 <div class="g2" style="align-items:start"><div class="stack"><span class="eyebrow">Request a quote</span><h1>Tell us what you need.</h1>
 <p class="lede">You'll get itemized pricing, lead time and shipping within one business day.</p>
 <p>Prefer to talk? Call or text <span class="contact">(657) 749-7165</span>, or email <span class="contact">orders@stryxsurgical.com</span>.</p></div>
-<div class="stack"><h2>Helpful to include</h2><ul class="checklist"><li>SKUs or sizes you're interested in, if you know them</li><li>Quantity of each</li><li>The instrument list, if you want help choosing a size</li><li>Engraving text or logo, if any</li><li>Ship-to address (city and ZIP is enough for a quote)</li></ul>
+<div class="stack"><h2>Helpful to include</h2><ul class="checklist"><li>SKUs or sizes you're interested in, if you know them</li><li>Quantity of each</li><li>Which instruments the tray needs to hold, if you want help choosing a size</li><li>Engraving text or logo, if any</li><li>Ship-to address (city and ZIP is enough for a quote)</li></ul>
 <p class="note">New vendor? We'll send a W-9 and a short credit form with your quote for net 30 terms.</p></div></div>
 </div></section></div><div class="sx"><section style="padding-top:0"><div class="wrap">
 <form class="qform" action="https://api.web3forms.com/submit" method="POST">
@@ -149,7 +152,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 <label for="q-qty"><span>Estimated quantity</span><select id="q-qty" name="quantity"><option>1&ndash;9 trays</option><option>10&ndash;49 trays</option><option>50&ndash;99 trays</option><option>100+ trays</option></select></label>
 <label for="q-sku" class="full"><span>SKUs or sizes</span><input id="q-sku" name="skus" placeholder="e.g. A7050, or 10 x 6 x 2 in"></label>
 <label for="q-zip" class="full"><span>Ship-to city and ZIP</span><input id="q-zip" name="ship_to" autocomplete="postal-code"></label>
-<label for="q-notes" class="full"><span>Instrument list, engraving, notes</span><textarea id="q-notes" name="notes" rows="5"></textarea></label>
+<label for="q-notes" class="full"><span>Instruments the tray needs to hold, engraving, notes</span><textarea id="q-notes" name="notes" rows="5" placeholder="e.g. 2 reduction clamps, 4 retractors, 1 elevator. Logo on lid."></textarea></label>
 </div>
 <button class="btn btn-p" type="submit">Send quote request</button>
 <p class="inc">We reply within one business day. Your details are used only to answer your request.</p>

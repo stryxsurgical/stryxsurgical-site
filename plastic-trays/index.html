@@ -42,6 +42,9 @@ font-family:var(--sans);color:var(--ink);background:var(--paper);font-size:16px;
 .sx .specstrip b{font-family:var(--mono);font-weight:500;font-size:1.15rem;font-variant-numeric:tabular-nums}
 .sx .specstrip span{font-size:.85rem;color:var(--steel)}
 .sx .tray{width:100%;max-width:100%;height:auto;display:block}
+.sx .photo{margin:0;display:flex;flex-direction:column;gap:10px}
+.sx .photo img{width:100%;max-width:100%;height:auto;display:block}
+.sx .photo figcaption{font-family:var(--mono);font-size:.8rem;color:var(--steel)}
 /* grids */
 .sx .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
 .sx .g2{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
@@ -133,26 +136,26 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 <div class="btns"><a class="btn btn-p" href="/request-a-quote/">Request a quote</a></div></div>
 <div class="group"><h2>Standard plastic trays</h2><p>Full sets with base, silicone mat and lid.</p><div class="grid pgrid"><article class="card"><span class="sku">P100</span><h3>Compact Shallow</h3><span class="dims">6 &times; 2.5 &times; 0.75 in</span>
 <div class="meta"><span class="tag">2&ndash;4 instruments</span><span class="tag">Compact</span></div><p class="inc">Includes: Base &middot; silicone mat &middot; lid</p>
-<div class="price"><b>From $32</b><a href="/request-a-quote/?sku=P100">Request quote &rarr;</a></div></article><article class="card"><span class="sku">P110</span><h3>Compact Extended</h3><span class="dims">7.5 &times; 2.5 &times; 0.75 in</span>
+<div class="price"><span class="inc">Volume pricing at 10, 50, 100+</span><a href="/request-a-quote/?sku=P100">Request quote &rarr;</a></div></article><article class="card"><span class="sku">P110</span><h3>Compact Extended</h3><span class="dims">7.5 &times; 2.5 &times; 0.75 in</span>
 <div class="meta"><span class="tag">4&ndash;5 instruments</span><span class="tag">Compact</span><span class="tag">Longer</span></div><p class="inc">Includes: Base &middot; silicone mat &middot; lid</p>
-<div class="price"><b>From $37</b><a href="/request-a-quote/?sku=P110">Request quote &rarr;</a></div></article><article class="card"><span class="sku">P120</span><h3>Wide Compact</h3><span class="dims">7.5 &times; 4 &times; 0.75 in</span>
+<div class="price"><span class="inc">Volume pricing at 10, 50, 100+</span><a href="/request-a-quote/?sku=P110">Request quote &rarr;</a></div></article><article class="card"><span class="sku">P120</span><h3>Wide Compact</h3><span class="dims">7.5 &times; 4 &times; 0.75 in</span>
 <div class="meta"><span class="tag">5&ndash;8 instruments</span><span class="tag">4 in wide</span></div><p class="inc">Includes: Base &middot; silicone mat &middot; lid</p>
-<div class="price"><b>From $43</b><a href="/request-a-quote/?sku=P120">Request quote &rarr;</a></div></article><article class="card"><span class="sku">P130</span><h3>Standard Shallow</h3><span class="dims">10 &times; 6 &times; 0.75 in</span>
+<div class="price"><span class="inc">Volume pricing at 10, 50, 100+</span><a href="/request-a-quote/?sku=P120">Request quote &rarr;</a></div></article><article class="card"><span class="sku">P130</span><h3>Standard Shallow</h3><span class="dims">10 &times; 6 &times; 0.75 in</span>
 <div class="meta"><span class="tag">10&ndash;15 instruments</span><span class="tag">Full size</span></div><p class="inc">Includes: Base &middot; silicone mat &middot; lid</p>
-<div class="price"><b>From $71</b><a href="/request-a-quote/?sku=P130">Request quote &rarr;</a></div></article><article class="card"><span class="sku">P140</span><h3>Standard Deep</h3><span class="dims">10 &times; 6 &times; 2.0 in</span>
+<div class="price"><span class="inc">Volume pricing at 10, 50, 100+</span><a href="/request-a-quote/?sku=P130">Request quote &rarr;</a></div></article><article class="card"><span class="sku">P140</span><h3>Standard Deep</h3><span class="dims">10 &times; 6 &times; 2.0 in</span>
 <div class="meta"><span class="tag">10&ndash;15 instruments</span><span class="tag">Full size</span><span class="tag">2 in deep</span></div><p class="inc">Includes: Base &middot; silicone mat &middot; lid</p>
-<div class="price"><b>From $85</b><a href="/request-a-quote/?sku=P140">Request quote &rarr;</a></div></article><article class="card"><span class="sku">P150</span><h3>Standard Double-Level</h3><span class="dims">10 &times; 6 &times; 2.0 in</span>
+<div class="price"><span class="inc">Volume pricing at 10, 50, 100+</span><a href="/request-a-quote/?sku=P140">Request quote &rarr;</a></div></article><article class="card"><span class="sku">P150</span><h3>Standard Double-Level</h3><span class="dims">10 &times; 6 &times; 2.0 in</span>
 <div class="meta"><span class="tag">20&ndash;25 instruments</span><span class="tag">Double level</span></div><p class="inc">Includes: Base &middot; two levels &middot; mats &middot; lid</p>
-<div class="price"><b>From $140</b><a href="/request-a-quote/?sku=P150">Request quote &rarr;</a></div></article></div></div><div class="group"><h2>Bar-retention plastic trays</h2><p>Silicone bars across the tray hold instrument handles in fixed positions, so nothing shifts during sterilization or transport. Base trays have bars in the base only; full trays add a bar in the lid.</p><div class="grid pgrid"><article class="card"><span class="sku">P103</span><h3>Compact Bar Tray, Base</h3><span class="dims">6.5 &times; 2.5 &times; 0.75 in</span>
+<div class="price"><span class="inc">Volume pricing at 10, 50, 100+</span><a href="/request-a-quote/?sku=P150">Request quote &rarr;</a></div></article></div></div><div class="group"><h2>Bar-retention plastic trays</h2><p>Silicone bars across the tray hold instrument handles in fixed positions, so nothing shifts during sterilization or transport. Base trays have bars in the base only; full trays add a bar in the lid.</p><div class="grid pgrid"><article class="card"><span class="sku">P103</span><h3>Compact Bar Tray, Base</h3><span class="dims">6.5 &times; 2.5 &times; 0.75 in</span>
 <div class="meta"><span class="tag">2&ndash;4 instruments</span><span class="tag">2 base bars</span></div><p class="inc">Includes: Base with 2 bars &middot; plain lid</p>
-<div class="price"><b>From $25</b><a href="/request-a-quote/?sku=P103">Request quote &rarr;</a></div></article><article class="card"><span class="sku">P105</span><h3>Compact Bar Tray, Full</h3><span class="dims">6.5 &times; 2.5 &times; 0.75 in</span>
+<div class="price"><span class="inc">Volume pricing at 10, 50, 100+</span><a href="/request-a-quote/?sku=P103">Request quote &rarr;</a></div></article><article class="card"><span class="sku">P105</span><h3>Compact Bar Tray, Full</h3><span class="dims">6.5 &times; 2.5 &times; 0.75 in</span>
 <div class="meta"><span class="tag">2&ndash;4 instruments</span><span class="tag">2 base + 1 lid bar</span></div><p class="inc">Includes: Base with 2 bars &middot; lid with 1 bar</p>
-<div class="price"><b>From $30</b><a href="/request-a-quote/?sku=P105">Request quote &rarr;</a></div></article><article class="card"><span class="sku">P113</span><h3>Extended Bar Tray, Base</h3><span class="dims">7.5 &times; 2.5 &times; 0.75 in</span>
+<div class="price"><span class="inc">Volume pricing at 10, 50, 100+</span><a href="/request-a-quote/?sku=P105">Request quote &rarr;</a></div></article><article class="card"><span class="sku">P113</span><h3>Extended Bar Tray, Base</h3><span class="dims">7.5 &times; 2.5 &times; 0.75 in</span>
 <div class="meta"><span class="tag">3&ndash;5 instruments</span><span class="tag">2 base bars</span></div><p class="inc">Includes: Base with 2 bars &middot; plain lid</p>
-<div class="price"><b>From $30</b><a href="/request-a-quote/?sku=P113">Request quote &rarr;</a></div></article><article class="card"><span class="sku">P115</span><h3>Extended Bar Tray, Full</h3><span class="dims">7.5 &times; 2.5 &times; 0.75 in</span>
+<div class="price"><span class="inc">Volume pricing at 10, 50, 100+</span><a href="/request-a-quote/?sku=P113">Request quote &rarr;</a></div></article><article class="card"><span class="sku">P115</span><h3>Extended Bar Tray, Full</h3><span class="dims">7.5 &times; 2.5 &times; 0.75 in</span>
 <div class="meta"><span class="tag">3&ndash;5 instruments</span><span class="tag">2 base + 1 lid bar</span></div><p class="inc">Includes: Base with 2 bars &middot; lid with 1 bar</p>
-<div class="price"><b>From $35</b><a href="/request-a-quote/?sku=P115">Request quote &rarr;</a></div></article></div></div>
-<p class="note" style="margin-top:40px">Prices shown are single-tray prices. Pricing improves at 10, 50 and 100+ trays, and plastic and aluminum sizes on one order count toward the total.</p>
+<div class="price"><span class="inc">Volume pricing at 10, 50, 100+</span><a href="/request-a-quote/?sku=P115">Request quote &rarr;</a></div></article></div></div>
+<p class="note" style="margin-top:40px">All trays are quoted per order, with itemized pricing within one business day. Pricing improves at 10, 50 and 100+ trays, and plastic and aluminum sizes on one order count toward the total.</p>
 </div></section></div></main>
 <div class="sx foot"><section style="padding-block:48px"><div class="wrap">
 <div class="cols"><div class="stack" style="gap:8px"><span class="brand"><img src="/assets/stryx-mark.png" alt="" width="20" height="35" style="vertical-align:-8px;margin-right:10px">Stryx Surgical</span><p>CalTray aluminum and plastic sterilization trays for surgery centers. Made in USA. Quotes in one business day.</p></div>
